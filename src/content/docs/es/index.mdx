@@ -1,36 +1,57 @@
 ---
-title: Welcome to Floogos
-description: Get started building your docs site with Floogos.
+title: Bienvenido a Floogos
+description: Comienza a desarrollar tu sitio de documentación con Floogos.
 template: splash
 hero:
-  tagline: AUTOMATION & MIDDLEWARE
+  tagline: Automatización y Middleware
   image:
-    file: ../../assets/floogos_icon_dark.png
+    file: ../../../assets/floogos_icon_dark.png
   actions:
-    - text: Guide
-      link: /guides/example/
+    - text: Guía de Flogoos
+      link: ./es/introduccion
       icon: right-arrow
-    - text: Read the Floogos docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard } from '@astrojs/starlight/components';
 
-## Next steps
+<LinkCard
+	title="Explora la documentación de Floogos"
+	href="./es/introduccion"
+/>
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Introduccion">
+		[Descubrir más](./es/introduccion)
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	<Card title="Primeros Pasos">
+		[Descubrir más](./es/primeros-pasos)
 	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
+	<Card title="Crear Flujo">
+		[Descubrir más](./es/crear-flujo)
 	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Editar Flujo">
+		[Descubrir más](./es/editar-flujo)
+	</Card>
+	<Card title="Ejecutar Flujo">
+		[Descubrir más](./es/historial)
+	</Card>
+	<Card title="Historial">
+		[Descubrir más](./es/historial)
+	</Card>
+	<Card title="Seguridad">
+		[Descubrir más](./es/seguridad)
+	</Card>
+	<Card title="Buenas Practicas">
+		[Descubrir más](./es/buenas-practicas)
+	</Card>
+	<Card title="Soporte">
+		[Descubrir más](./es/soporte)
+	</Card>
+	<Card title="Nodos">
+		[Descubrir más](./es/nodos/start)
+	</Card>
+	<Card title="Plantillas">
+		[Descubrir más](./es/plantillas/email-bienvenida)
 	</Card>
 </CardGrid>

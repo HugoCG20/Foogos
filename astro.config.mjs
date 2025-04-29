@@ -14,49 +14,57 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Introduccion',
-					autogenerate: { directory: 'reference' },
+					slug: 'introduccion',
 				},
 				{
 					label: 'Primeros pasos',
-					autogenerate: { directory: 'reference' },
+					slug: 'primeros-pasos' ,
 				},
 				{
 					label: 'Crear Flujo',
-					autogenerate: { directory: 'reference' },
+					slug: 'crear-flujo' ,
 				},
 				{
 					label: 'Editar Flujo',
-					autogenerate: { directory: 'reference' },
+					slug: 'editar-flujo' ,
 				},
 				{
 					label: 'Ejecutar Flujo',
-					autogenerate: { directory: 'reference' },
+					slug: 'editar-flujo' ,
 				},
 				{
 					label: 'Historial',
-					autogenerate: { directory: 'reference' },
+					slug: 'historial' ,
 				},
 				{
 					label: 'Seguridad',
-					autogenerate: { directory: 'reference' },
+					slug: 'seguridad' ,
 				},
 				{
 					label: 'Buenas Practicas',
-					autogenerate: { directory: 'reference' },
+					slug: 'buenas-practicas' ,
 				},
 				{
 					label: 'Soporte',
-					autogenerate: { directory: 'reference' },
+					slug: 'soporte' ,
 				},
 				{
 					label: 'Nodos',
-					autogenerate: { directory: 'reference' },
+					autogenerate: { directory: 'nodos' },
 				},
 				{
 					label: 'Plantillas',
-					autogenerate: { directory: 'reference' },
+					autogenerate: { directory: 'plantillas' },
 				},
 			],
+			defaultLocale: "es",
+			locales: {
+				es: { label: "Español", lang: "es" },
+				en: { label: "English", lang: "en" },
+			},
 		}),
 	],
+	redirects: {
+		"/": "/es"
+	}
 });
