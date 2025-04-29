@@ -12,51 +12,47 @@ export default defineConfig({
 				src: './src/assets/floogos_dark.png',
 			},
 			sidebar: [
-				{
-					label: 'Introduccion',
-					slug: 'introduccion',
-				},
-				{
-					label: 'Primeros pasos',
-					slug: 'primeros-pasos' ,
-				},
-				{
-					label: 'Crear Flujo',
-					slug: 'crear-flujo' ,
-				},
-				{
-					label: 'Editar Flujo',
-					slug: 'editar-flujo' ,
-				},
-				{
-					label: 'Ejecutar Flujo',
-					slug: 'editar-flujo' ,
-				},
-				{
-					label: 'Historial',
-					slug: 'historial' ,
-				},
-				{
-					label: 'Seguridad',
-					slug: 'seguridad' ,
-				},
-				{
-					label: 'Buenas Practicas',
-					slug: 'buenas-practicas' ,
-				},
-				{
-					label: 'Soporte',
-					slug: 'soporte' ,
-				},
-				{
-					label: 'Nodos',
-					autogenerate: { directory: 'nodos' },
-				},
-				{
-					label: 'Plantillas',
-					autogenerate: { directory: 'plantillas' },
-				},
-			],
+                {
+                    label: 'Introduccion',
+                    slug: 'introduccion'
+                },
+                {
+                    label: 'Primeros pasos',
+                    slug: 'primeros-pasos'
+                },
+                {
+                    label: 'Buenas Prácticas',
+                    slug: 'buenas-practicas'
+                },
+                {
+                    label: 'Crear Flujo',
+                    slug: 'crear-flujo'
+                },
+                {
+                    label: 'Editar Flujo',
+                    slug: 'editar-flujo'
+                },
+                {
+                    label: 'Nodos',
+                    autogenerate: { directory: 'nodos' }
+                },
+                {
+                    label: 'Plantillas',
+                    autogenerate: { directory: 'plantillas' } 
+                },
+                {
+                    label: 'Seguridad',
+                    slug: 'seguridad'
+                },
+                {
+                    label: 'Historial',
+                    slug: 'historial'
+                },
+                {
+                    label: 'Soporte',
+                    slug: 'soporte'
+                },
+            ],
 			defaultLocale: "es",
 			locales: {
 				es: { label: "Español", lang: "es" },
