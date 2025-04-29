@@ -1,14 +1,14 @@
 ---
-title: Bienvenido a Floogos
-description: Comienza a desarrollar tu sitio de documentación con Floogos.
+title: Welcome to Floogos
+description: Start developing your documentation site with Floogos.
 template: splash
 hero:
-  tagline: Automatización y Middleware
+  tagline: Automation and Middleware
   image:
     file: ../../../assets/floogos_icon_dark.png
   actions:
-    - text: Guía de Flogoos
-      link: ./es/introduccion
+    - text: Flogoos Guide
+      link: ./en/introduccion
       icon: right-arrow
 ---
 
@@ -16,39 +16,42 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 import { LinkCard } from '@astrojs/starlight/components';
 
 <LinkCard
-	title="Explora la documentación de Floogos"
-	href="./es/introduccion"
+	title="Explore Floogos documentation"
+	href="./en/introduction"
 />
 
 <CardGrid stagger>
-    <Card title="Introducción" icon="document">
-        [Descubrir más](/es/introduccion)
+    <Card title="Introduction" icon="document">
+        [Show more](/en/introduction)
     </Card>
-    <Card title="Primeros pasos" icon='document'>
-        [Descubrir más](/es/primeros-pasos)
+    <Card title="First steps" icon='document'>
+        [Show more](/en/first-steps)
     </Card>
-    <Card title="Buenas prácticas" icon='document'>
-        [Descubrir más](/es/buenas-practicas)
+    <Card title="Good practices" icon='document'>
+        [Show more](/en/good-practices)
     </Card>
-    <Card title="Crear flujo" icon='pencil'>
-        [Descubrir más](/es/crear-flujo)
+    <Card title="Create a flow" icon='pencil'>
+        [Show more](/en/create-flow)
     </Card>
-    <Card title="Editar flujo" icon='pen'>
-        [Descubrir más](/es/editar-flujo)
+    <Card title="Edit flow" icon='pen'>
+        [Show more](/en/edit-flow)
     </Card>
-    <Card title="Nodos" icon='puzzle'>
-        [Descubrir más](/es/nodos)
+    <Card title="Ejecute flow" icon='rocket'>
+        [Show more](/en/ejecute-flow)
     </Card>
-    <Card title="Plantillas" icon='seti:odata'>
-        [Descubrir más](/es/plantillas)
+    <Card title="Nodes" icon='puzzle'>
+        [Show more](/en/nodes)
     </Card>
-    <Card title="seguridad" icon='seti:odata'>
-        [Descubrir más](/es/seguridad)
+    <Card title="Templates" icon='seti:odata'>
+        [Show more](/en/templates)
     </Card>
-    <Card title="Historial" icon='seti:odata'>
-        [Descubrir más](/es/historial)
+    <Card title="Segurity" icon='seti:odata'>
+        [Show more](/en/segurity)
     </Card>
-    <Card title="Soporte" icon='seti:odata'>
-        [Descubrir más](/es/soporte)
+    <Card title="History" icon='seti:odata'>
+        [Show more](/en/history)
+    </Card>
+    <Card title="Sopport" icon='seti:odata'>
+        [Show more](/en/sopport)
     </Card>
 </CardGrid>

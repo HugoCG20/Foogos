@@ -13,44 +13,81 @@ export default defineConfig({
 			},
 			sidebar: [
                 {
-                    label: 'Introduccion',
-                    slug: 'introduccion'
+                    label: 'Introduction',
+                    translations: {
+						es: 'Introducción',
+					},
+                    slug: 'introduction'
                 },
                 {
-                    label: 'Primeros pasos',
-                    slug: 'primeros-pasos'
+                    label: 'First Steps',
+                    translations: {
+						es: 'Primeros pasos',
+					},
+                    slug: 'first-steps'
                 },
                 {
-                    label: 'Buenas Prácticas',
-                    slug: 'buenas-practicas'
+                    label: 'Good practices',
+                    translations: {
+						es: 'Buenas prácticas',
+					},
+                    slug: 'good-practices'
                 },
                 {
-                    label: 'Crear Flujo',
-                    slug: 'crear-flujo'
+                    label: 'Create a flow',
+                    translations: {
+						es: 'Crear flujo',
+					},
+                    slug: 'create-flow'
                 },
                 {
-                    label: 'Editar Flujo',
-                    slug: 'editar-flujo'
+                    label: 'Edit flow',
+                    translations: {
+						es: 'Editar flujo',
+					},
+                    slug: 'edit-flow'
                 },
                 {
-                    label: 'Nodos',
-                    autogenerate: { directory: 'nodos' }
+                    label: 'Ejecute flow',
+                    translations: {
+						es: 'Ejecutar flujo',
+					},
+                    slug: 'ejecute-flow'
                 },
                 {
-                    label: 'Plantillas',
-                    autogenerate: { directory: 'plantillas' } 
+                    label: 'Nodes',
+                    translations: {
+						es: 'Nodos',
+					},
+                    autogenerate: { directory: 'nodes' }
                 },
                 {
-                    label: 'Seguridad',
-                    slug: 'seguridad'
+                    label: 'Templates',
+                    translations: {
+						es: 'Plantillas',
+					},
+                    autogenerate: { directory: 'templates' } 
                 },
                 {
-                    label: 'Historial',
-                    slug: 'historial'
+                    label: 'Segurity',
+                    translations: {
+						es: 'Seguridad',
+					},
+                    slug: 'segurity'
                 },
                 {
-                    label: 'Soporte',
-                    slug: 'soporte'
+                    label: 'History',
+                    translations: {
+						es: 'Historial',
+					},
+                    slug: 'history'
+                },
+                {
+                    label: 'Sopport',
+                    translations: {
+						es: 'Soporte',
+					},
+                    slug: 'sopport'
                 },
             ],
 			defaultLocale: "es",
@@ -61,6 +98,6 @@ export default defineConfig({
 		}),
 	],
 	redirects: {
-		"/": "/es"
+		"/": "/en"
 	}
 });
