@@ -1,0 +1,31 @@
+---
+title: Send Mail
+description: Envía un correo electrónico a un destinatario definido.
+---
+
+
+# ✉️ Nodo: Send Mail
+
+Este nodo permite enviar un correo electrónico con asunto, cuerpo y destinatario definidos, incluyendo adjuntos.
+
+## 🧩 Función
+Envia correos salientes desde el flujo, por ejemplo para notificaciones o confirmaciones.
+
+## ⚙️ Configuración
+
+| Campo         | Tipo    | Descripción                                   |
+|----------------|---------|-----------------------------------------------|
+| credentials_id | Texto   | ID de la cuenta de correo configurada         |
+| to             | Texto   | Email del destinatario                        |
+| subject        | Texto   | Asunto del correo                             |
+| body           | Texto   | Cuerpo del mensaje                            |
+| attachments    | JSON    | Lista de archivos adjuntos (opcional)         |
+
+## 📝 Uso común
+- Confirmaciones automáticas
+- Envío de reportes
+- Notificaciones internas
+
+## 🌍 Multiidioma
+- `help.es`: Cliente de email para enviar correos electrónicos, permite adjuntar ficheros.
+- `help.en`: Email client for sending emails, allows you to attach files.

@@ -13,14 +13,47 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Introduccion',
+					autogenerate: { directory: 'reference' },
 				},
 				{
-					label: 'Reference',
+					label: 'Primeros pasos',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Crear Flujo',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Editar Flujo',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Ejecutar Flujo',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Historial',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Seguridad',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Buenas Practicas',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Soporte',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Nodos',
+					autogenerate: { directory: 'reference' },
+				},
+				{
+					label: 'Plantillas',
 					autogenerate: { directory: 'reference' },
 				},
 			],
