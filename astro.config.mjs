@@ -6,7 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			customCss: ['./src/styles/global.css'],
+			customCss: ['./src/styles/custom.css'],
 			title: '',
 			logo: {
 				src: './src/assets/floogos_dark.png',
