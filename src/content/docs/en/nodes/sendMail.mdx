@@ -1,0 +1,30 @@
+---
+title: Send Mail
+description: Sends an email to a specified recipient.
+---
+
+# ✉️ Node: Send Mail
+
+This node allows you to send an email with a defined subject, body, recipient, and optional attachments.
+
+## 🧩 Function
+Sends outbound emails from the flow, for example for notifications or confirmations.
+
+## ⚙️ Configuration
+
+| Field           | Type  | Description                                        |
+|-----------------|-------|----------------------------------------------------|
+| credentials_id  | Text  | ID of the configured email account                 |
+| to              | Text  | Recipient’s email address                          |
+| subject         | Text  | Email subject                                      |
+| body            | Text  | Email body content                                 |
+| attachments     | JSON  | List of attachment files (optional)                |
+
+## 📝 Common Usage
+- Automatic confirmations  
+- Sending reports  
+- Internal notifications  
+
+## 🌍 Multi-language Support
+- `help.es`: Cliente de correo para enviar emails, permite adjuntar ficheros.  
+- `help.en`: Email client for sending emails, allows you to attach files.  

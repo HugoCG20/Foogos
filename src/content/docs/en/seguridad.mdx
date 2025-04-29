@@ -1,0 +1,28 @@
+---
+title: Seguridad
+description: Gestión de usuarios, credenciales y roles en Floogos
+---
+
+
+# 🔒 Seguridad en Floogos
+
+Floogos incluye un sistema de gestión de acceso y control basado en roles para proteger tus flujos e integraciones.
+
+## 👥 Perfiles de usuario
+
+| Rol                | Descripción                                                |
+|--------------------|------------------------------------------------------------|
+| Superadministrador | Tiene acceso completo a todos los recursos                 |
+| Gestor de workflow | Puede crear, editar y ejecutar flujos                      |
+| Gestor de credenciales | Puede administrar claves, tokens y accesos a servicios externos |
+| Soporte            | Accede a logs y puede intervenir en casos de error         |
+
+## 🔐 Gestión de credenciales
+- Cada nodo que requiere autenticación usa una `credentials_id`.
+- Las credenciales se almacenan cifradas.
+- Sólo usuarios con permisos pueden editarlas.
+
+## ✅ Recomendaciones
+- Usa un usuario por equipo.
+- Mantén separadas las credenciales de producción y pruebas.
+- Revisa los permisos antes de compartir acceso.

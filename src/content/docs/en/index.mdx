@@ -1,0 +1,54 @@
+---
+title: Bienvenido a Floogos
+description: Comienza a desarrollar tu sitio de documentación con Floogos.
+template: splash
+hero:
+  tagline: Automatización y Middleware
+  image:
+    file: ../../../assets/floogos_icon_dark.png
+  actions:
+    - text: Guía de Flogoos
+      link: ./es/introduccion
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard } from '@astrojs/starlight/components';
+
+<LinkCard
+	title="Explora la documentación de Floogos"
+	href="./es/introduccion"
+/>
+
+<CardGrid stagger>
+    <Card title="Introducción" icon="document">
+        [Descubrir más](/es/introduccion)
+    </Card>
+    <Card title="Primeros pasos" icon='document'>
+        [Descubrir más](/es/primeros-pasos)
+    </Card>
+    <Card title="Buenas prácticas" icon='document'>
+        [Descubrir más](/es/buenas-practicas)
+    </Card>
+    <Card title="Crear flujo" icon='pencil'>
+        [Descubrir más](/es/crear-flujo)
+    </Card>
+    <Card title="Editar flujo" icon='pen'>
+        [Descubrir más](/es/editar-flujo)
+    </Card>
+    <Card title="Nodos" icon='puzzle'>
+        [Descubrir más](/es/nodos)
+    </Card>
+    <Card title="Plantillas" icon='seti:odata'>
+        [Descubrir más](/es/plantillas)
+    </Card>
+    <Card title="seguridad" icon='seti:odata'>
+        [Descubrir más](/es/seguridad)
+    </Card>
+    <Card title="Historial" icon='seti:odata'>
+        [Descubrir más](/es/historial)
+    </Card>
+    <Card title="Soporte" icon='seti:odata'>
+        [Descubrir más](/es/soporte)
+    </Card>
+</CardGrid>

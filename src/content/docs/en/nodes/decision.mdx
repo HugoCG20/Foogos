@@ -1,0 +1,26 @@
+---
+title: Decision
+description: Evaluates conditions on the data and allows the flow to branch.
+---
+
+# 🔀 Node: Decision
+
+This node evaluates a logical expression on the incoming data and routes the flow based on the result.
+
+## 🧩 Function
+If the condition evaluates to true, the flow follows the “true” path; otherwise, it follows the “false” path.
+
+## ⚙️ Configuration
+
+| Field      | Type   | Description                                         |
+|------------|--------|-----------------------------------------------------|
+| condition  | Text   | JavaScript expression evaluated against `data`      |
+
+## 📝 Common Usage
+- Check if a value is present (`data.email`)  
+- Compare numeric values (`data.amount > 100`)  
+- Validate required fields  
+
+## 🌍 Multi-language Support
+- `help.es`: Evalúa una expresión si es verdadera o falsa  
+- `help.en`: Evaluates an expression to determine if it is true or false  
