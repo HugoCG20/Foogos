@@ -1,0 +1,27 @@
+---
+title: Memory
+description: Gestión de variables en memoria accesibles entre flujos.
+---
+
+
+## Nodo: Memory
+
+Este nodo permite almacenar, modificar o recuperar variables en memoria para ser usadas entre flujos o ejecuciones.
+
+## Función
+Lee o escribe una variable persistente accesible por todos los flujos del cliente.
+
+## Configuración
+
+| Campo       | Tipo     | Descripción                                   |
+|--------------|----------|-----------------------------------------------|
+| action       | Select   | Acción: get, set, update, delete              |
+| key          | Texto    | Clave de la variable                          |
+| data         | Texto    | Valor a almacenar (si aplica)                 |
+| options      | Texto    | Opciones adicionales de control (opcional)    |
+| type         | Select   | Tipo de dato: string, int, json, date...      |
+| persistent   | Booleano | Si se guarda de forma persistente             |
+
+## Multiidioma
+- `help.es`: Permite gestionar variables almacenándolas en memoria
+- `help.en`: Manage variables stored in memory accessible to all workflows

@@ -1,0 +1,28 @@
+---
+title: Web Response
+description: Personaliza la respuesta HTTP cuando se activa un flujo por Webhook.
+---
+
+
+## Nodo: Web Response
+
+Este nodo permite personalizar lo que devuelve Floogos cuando un flujo se activa por Webhook.
+
+## Función
+Responde con código, cuerpo y headers definidos al cliente que llama al Webhook.
+
+## Configuración
+
+| Campo         | Tipo     | Descripción                                |
+|----------------|----------|--------------------------------------------|
+| code_response  | Select   | Código HTTP a devolver (ej: 200, 400)      |
+| body_response  | Texto    | Contenido en JSON o texto plano            |
+| headers        | JSON     | Cabeceras HTTP adicionales (opcional)      |
+
+## Uso común
+- Confirmaciones personalizadas tras recibir eventos
+- Devolver datos formateados a sistemas externos
+
+## Multiidioma
+- `help.es`: Permite personalizar la respuesta cuando se activa un workflow mediante webhook
+- `help.en`: Allows you to customize the response when a workflow is triggered via webhook

@@ -1,0 +1,32 @@
+---
+title: OpenAI API
+description: Conecta con la API de OpenAI para generar textos con IA.
+---
+
+
+## Nodo: OpenAI API
+
+Este nodo permite conectarse a la API de OpenAI para generar respuestas inteligentes, resúmenes, textos personalizados y más.
+
+## Función
+Envia un `prompt` a OpenAI y recibe una respuesta según el modelo configurado.
+
+## Configuración
+
+| Campo         | Tipo     | Descripción                                     |
+|----------------|----------|-------------------------------------------------|
+| credentials_id | Texto    | ID de la API Key configurada                   |
+| prompt         | Texto    | Texto de entrada para el modelo IA             |
+| model_ia       | Select   | Modelo a utilizar (ej: gpt-4, gpt-3.5-turbo)   |
+| temperature    | Decimal  | Control de creatividad (0.0 - 1.0)             |
+| max_tokens     | Número   | Longitud máxima de la respuesta                |
+| dataKey        | Texto    | Clave donde se guardará la respuesta           |
+
+## Uso común
+- Generar emails automáticos
+- Resumir textos largos
+- Reescribir contenido
+
+## Multiidioma
+- `help.es`: Este módulo permite conectarse a la API de OpenAI
+- `help.en`: This module allows you to connect to the OpenAI API

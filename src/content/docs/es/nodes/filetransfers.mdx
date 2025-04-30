@@ -1,0 +1,25 @@
+---
+title: File Transfers
+description: Envía archivos a un servidor FTP o SFTP.
+---
+
+
+## Nodo: File Transfers
+
+Este nodo permite subir archivos a un servidor remoto vía FTP o SFTP.
+
+## Función
+Conecta con un servidor, transfiere un archivo y finaliza.
+
+## Configuración
+
+| Campo         | Tipo   | Descripción                         |
+|----------------|--------|-------------------------------------|
+| credentials_id | Texto  | ID de credencial FTP/SFTP           |
+| protocol       | Texto  | Protocolo: ftp o sftp               |
+| localPath      | Texto  | Ruta del archivo local              |
+| remotePath     | Texto  | Ruta destino en el servidor remoto  |
+
+## Multiidioma
+- `help.es`: Envía fichero a servidor FTP/SFTP
+- `help.en`: Send file to FTP/SFTP server

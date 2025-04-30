@@ -3,11 +3,11 @@ title: Plantilla - Email de Bienvenida
 description: Plantilla de flujo para dar la bienvenida automáticamente a un nuevo cliente o usuario.
 ---
 
-# 📥 Email de Bienvenida
+## Email de Bienvenida
 
 Esta plantilla permite crear un flujo que se activa cuando un nuevo cliente se registra y automáticamente le envía un correo de bienvenida, opcionalmente guardando el evento en un fichero Excel o base de datos.
 
-## 🧩 Módulos utilizados
+## Módulos utilizados
 
 | Nodo         | Función                                                                 |
 |--------------|-------------------------------------------------------------------------|
@@ -18,7 +18,7 @@ Esta plantilla permite crear un flujo que se activa cuando un nuevo cliente se r
 | `End`        | Finaliza el flujo                                                      |
 
 
-## 📝 Descripción del flujo
+## Descripción del flujo
 1. Se recibe una solicitud externa desde un sistema externo o formulario web vía Webhook.
 2. Se valida si los datos son correctos (por ejemplo, si el email no está vacío).
 3. Si pasa la validación, se envía un correo personalizado.
@@ -26,11 +26,11 @@ Esta plantilla permite crear un flujo que se activa cuando un nuevo cliente se r
 5. Se cierra el flujo.
 
 
-## 📄 Ejemplo visual del flujo
+## Ejemplo visual del flujo
 ![Image](../../../../assets/welcome-email-esquema.jpg)
 
 
-## ⚙️ Recomendaciones
+## Recomendaciones
 - Asegúrate de tener configuradas las credenciales de envío de correo antes de probar.
 - Revisa el formato del email y personaliza el cuerpo con variables dinámicas (`{{data.nombre}}`, etc.).
 - Usa `saveToExcel` sólo si necesitas persistencia adicional para reportes.

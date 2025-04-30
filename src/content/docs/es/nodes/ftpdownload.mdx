@@ -1,0 +1,25 @@
+---
+title: FTP Download
+description: Descarga archivos desde servidores FTP/SFTP.
+---
+
+
+## Nodo: FTP Download
+
+Este nodo permite descargar archivos desde un servidor remoto usando FTP o SFTP.
+
+## Función
+Se conecta al servidor, busca el archivo y lo descarga.
+
+## Configuración
+
+| Campo               | Tipo     | Descripción                           |
+|----------------------|----------|---------------------------------------|
+| credentials_id       | Texto    | ID de credencial con acceso FTP/SFTP  |
+| protocol             | Select   | Protocolo: ftp o sftp                 |
+| remotePath           | Texto    | Ruta del archivo a descargar          |
+| deleteAfterDownload  | Booleano | Eliminar archivo después de bajarlo   |
+
+## Multiidioma
+- `help.es`: Descarga fichero de servidor ftp/sftp
+- `help.en`: Download file from ftp/sftp server
