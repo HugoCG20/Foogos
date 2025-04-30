@@ -11,6 +11,14 @@ export default defineConfig({
 			logo: {
 				src: './src/assets/floogos_dark.png',
 			},
+            social: [
+                { icon: 'discord', label: 'Discord', href: 'https://astro.build/chat' },
+                {
+                    icon: 'github',
+                    label: 'GitHub',
+                    href: 'https://github.com/withastro/starlight',
+                },
+            ],
 			sidebar: [
                 {
                     label: 'Introduction',

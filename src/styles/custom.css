@@ -48,3 +48,11 @@
 h1:where(.astro-j6tvhyss) {
     color: var(--sl-title-color-h1);
 }
+
+.card:where(.astro-v5tidmuc) {
+    border-radius: 0.5rem;
+}
+
+.sl-markdown-content a:not(:where(.not-content *)) {
+    text-decoration: none;
+}
