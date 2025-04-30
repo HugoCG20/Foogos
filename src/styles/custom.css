@@ -13,6 +13,8 @@
     --sl-color-gray-5: #738a96;
     --sl-color-gray-6: #182230;
     --sl-color-black: #182230;
+    --sl-text-h2: 1.75rem;
+    --sl-title-color-h1: #ffffff;
 }
 /* Light mode colors. */
 :root[data-theme='light'] {
@@ -23,16 +25,26 @@
     --sl-color-accent-high: #182775;
     --sl-color-text-accent: #FF6400;
     --sl-color-white: #FF6400;
-    --sl-color-gray-1: #24272f;
-    --sl-color-gray-2: #353841;
+    --sl-color-gray-1: #000000;
+    --sl-color-gray-2: #000000;
     --sl-color-gray-3: #545861;
     --sl-color-gray-4: #888b96;
     --sl-color-gray-5: #738a96;
     --sl-color-gray-6: #eceef2;
     --sl-color-gray-7: #f5f6f8;
     --sl-color-black: #ffffff;
+    --sl-text-h2: 1.75rem;
+    --sl-title-color-h1: #000000;
 }
 
 .sl-markdown-content a:not(:where(.not-content *)) {
     color: var(--sl-color-gray-5);
+}
+
+.sl-markdown-content :is(h1, h2, h3, h4, h5, h6):not(:where(.not-content *)) {
+    color: var(--sl-title-color-h1);
+}
+
+h1:where(.astro-j6tvhyss) {
+    color: var(--sl-title-color-h1);
 }
