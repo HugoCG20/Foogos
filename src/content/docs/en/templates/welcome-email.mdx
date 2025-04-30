@@ -25,21 +25,12 @@ This template allows you to create a flow that is triggered when a new customer 
 5. The flow ends.
 
 ## 📄 Visual Flow Example
-plaintext
-Webhook  
-   ↓  
-Decision (valid email?)  
-   ↓ yes              ↓ no  
-SendMail           End  
-   ↓  
-saveToExcel (optional)  
-   ↓  
-End
+[Image](../../../../assets/welcome-email-esquema.jpg)
 
 ## ⚙️ Recommendations
 - Make sure your email sending credentials are configured before testing.
-- Review the email format and personalize the body with dynamic variables ({{data.name}}, etc.).
-- Use saveToExcel only if you need additional persistence for reports.
+- Review the email format and personalize the body with dynamic variables (`{{data.name}}`, etc.).
+- Use `saveToExcel` only if you need additional persistence for reports.
 
 ## 🛠 Typical Configurations
 
@@ -50,16 +41,16 @@ End
 - **condition**: data.email && data.email.includes("@")
 
 ### SendMail Node
-- **to**: {{data.email}}
+- **to**: `{{data.email}}`
 - **subject**: "Welcome to our platform!"
-- **body**: Hi {{data.name}}, thank you for signing up...
+- **body**: Hi `{{data.name}}`, thank you for signing up...
 
 ### saveToExcel Node *(optional)*
 - **filePath**: /documents/new_users.xlsx
 - **dataKey**: data
 
 ## 🌍 Multi-language Support
-- This template can be easily adapted to the user's language if data.language is available.
+- This template can be easily adapted to the user's language if `data.language` is available.
 
 ---
 **End of template**
