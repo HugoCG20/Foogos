@@ -1,0 +1,23 @@
+---
+title: Iterator
+description: Iterates over a dataset and executes subflows for each element.
+---
+
+## Node: Iterator
+
+This node allows you to loop through a dataset and execute specific logic for each individual element.
+
+## Function
+Breaks down a dataset and processes each entry independently using connected modules.
+
+## Configuration
+
+| Field           | Type   | Description                                             |
+|------------------|--------|---------------------------------------------------------|
+| recordModule     | Text   | Module executed for each iteration                      |
+| recordConfig     | JSON   | Configuration for the module (URL, method, etc.)        |
+| onComplete       | JSON   | What to do after all iterations are complete            |
+
+## Multilanguage
+- `help.es`: Ejecuta un subflujo por cada registro del dataset  
+- `help.en`: Executes a subflow for each record in the dataset

@@ -1,0 +1,24 @@
+---
+title: FTP Download
+description: Download files from FTP/SFTP servers.
+---
+
+## Node: FTP Download
+
+This node allows you to download files from a remote server using FTP or SFTP.
+
+## Function
+Connects to the server, locates the file, and downloads it.
+
+## Configuration
+
+| Field               | Type     | Description                                  |
+|---------------------|----------|----------------------------------------------|
+| credentials_id      | Text     | FTP/SFTP credential ID                       |
+| protocol            | Select   | Protocol: ftp or sftp                        |
+| remotePath          | Text     | Path of the file to download                 |
+| deleteAfterDownload | Boolean  | Delete the file after downloading            |
+
+## Multilanguage
+- `help.es`: Descarga fichero de servidor ftp/sftp  
+- `help.en`: Download file from ftp/sftp server
